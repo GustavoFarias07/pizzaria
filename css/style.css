@@ -1,0 +1,154 @@
+/* Reset CSS para tirar todas as margens dos elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* Estilizaçao do HEADER - cabeçalho */
+header {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header>img {
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu>li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu>li:hover {
+    background-color: darkred;
+}
+
+.menu>li>a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+/* Estilizando nosso banner*/
+.banner {
+    background-image: url(../img/pizza.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    text-shadow: 3px 3px 4px black;
+    box-shadow: 0px 3px 10px lime;
+}
+
+.botao1 {
+    background-color: rgba(0, 0, 0, 0.234);
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    margin-top: 20px;
+    border-radius: 6px;
+
+}
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+hr {
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 0, 0, 0) 100%);
+    border: 0;
+    width: 100%;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5px;
+    color: green;
+}
+
+p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.sabores {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.sabor {
+    background-color: green;
+    margin: 5px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 5px green;
+}
+
+.preco {
+    background-color: yellow;
+    border-radius: 10px;
+    border: 10px solid yellow;
+    text-align: center;
+    margin: 5px;
+}
+
+.sabor>img {
+    border-radius: 5px 5px 0px 0px;
+
+}
+
+.promocoes {
+    display: flex;
+    overflow: scroll;
+    gap: 10px;
+}
+.promocoes::-webkit-scrollbar{
+    display: none;
+}
+
+.redes > li > a > img{
+    width: 15px;
+}
+
+footer{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
